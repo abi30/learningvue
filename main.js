@@ -8,7 +8,12 @@ const app = Vue.createApp({
     methods: {
 
         updateCart(id){
+           
             this.cart.push(id);
+        },
+        removeCartValue(id){
+           
+            this.cart.pop(id);
         }
     }
 })
